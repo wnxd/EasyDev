@@ -3,14 +3,14 @@
 export setCmd="set -eo pipefail"
 $setCmd
 
-export PATH=/opt/EasyDev/bin:$EasyDevTheosPath/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH
+export PATH=~/EasyDev/bin:$EasyDevTheosPath/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH
 
 export scriptName="${0##*/}"
 export scriptVer="2.0"
 export originalArguments=("$@")
 export activeActionArg
 
-export EasyDevPath="/opt/EasyDev"
+export EasyDevPath="~/EasyDev"
 #默认设备ip
 export DefaultDeviceIP="localhost"
 #默认端口号

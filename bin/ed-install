@@ -6,14 +6,14 @@ export setCmd="set -eo pipefail"
 $setCmd
 
 #导出环境变量
-export PATH=/opt/EasyDev/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH
+export PATH=~/EasyDev/bin:/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH
 
 #脚本名称和版本
 export scriptName="${0##*/}"
 export scriptVer="2.0"
 
 #本地存储文件的目录
-export EasyDevPath="/opt/EasyDev"
+export EasyDevPath="~/EasyDev"
 export backupFileExt=".EasyDev"
 
 #获取用户名、用户组、用户目录、和profile文件
@@ -286,7 +286,7 @@ function versionGe() {
 }
 
 # start it
-# 创建/opt/EasyDev
+# 创建~/EasyDev
 mkdir -p "$EasyDevPath" ||
 	panic $? "Failed to make directory: $EasyDevPath"
 

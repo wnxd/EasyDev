@@ -21,14 +21,14 @@
 ### 配置 theos
 
 ```
-sudo git clone --recursive https://github.com/theos/theos.git /opt/theos
+sudo git clone --recursive https://github.com/theos/theos.git ~/theos
 ```
 
 打开 `~/.bash_profile`，末尾加入
 
 ```
-export THEOS=/opt/theos
-export PATH=/opt/theos/bin/:$PATH
+export THEOS=~/theos
+export PATH=~/theos/bin/:$PATH
 ```
 
 刷新生效
@@ -42,7 +42,7 @@ source ~/.bash_profile
 ### 配置 EasyDev
 
 ```
-sudo git clone --recursive https://github.com/lemon4ex/EasyDev.git /opt/EasyDev
+sudo git clone --recursive https://github.com/lemon4ex/EasyDev.git ~/EasyDev
 ```
 
 ### 配置 ldid
@@ -51,7 +51,7 @@ sudo git clone --recursive https://github.com/lemon4ex/EasyDev.git /opt/EasyDev
 brew install ldid
 ```
 
-`/opt/EasyDev/bin`目录内已自带，也可不安装。
+`~/EasyDev/bin`目录内已自带，也可不安装。
 
 ### 配置免密码登录越狱设备
 
@@ -79,14 +79,14 @@ xcode-select -p
 执行安装命令:
 
 ```
-cd /opt/EasyDev/bin
+cd ~/EasyDev/bin
 chmod +x ed-install
 ./ed-install
 ```
 
 ### 卸载
 ```
-cd /opt/EasyDev/bin
+cd ~/EasyDev/bin
 chmod +x ed-uninstall
 ./ed-uninstall
 ```
