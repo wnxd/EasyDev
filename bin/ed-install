@@ -298,8 +298,8 @@ mkdir -p "$EasyDevPath" ||
 echo "Replace template environment variables..."
 
 find $EasyDevPath/templates -name "TemplateInfo.plist" | while read -r file; do
-    sed -i'' "s|\${EasyDevPath}|${EasyDevPath}|g" "$file"
-    sed -i'' "s|\${THEOS}|${THEOS}|g" "$file"
+    sed -i '' -e "s|\${EasyDevPath}|${EasyDevPath}|g" "$file"
+    sed -i '' -e "s|\${THEOS}|${THEOS}|g" "$file"
 done
 
 #创建符号链接
