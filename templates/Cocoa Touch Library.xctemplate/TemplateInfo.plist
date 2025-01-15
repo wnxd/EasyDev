@@ -27,9 +27,9 @@
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>EasyDevPath</key>
-				<string>~/EasyDev</string>
+				<string>${EasyDevPath}</string>
 				<key>EasyDevTheosPath</key>
-				<string>~/theos</string>
+				<string>${THEOS}</string>
 			</dict>
 			<key>BuildPhases</key>
 			<array>
@@ -47,7 +47,7 @@
 				</dict>
 				<dict>
 					<key>ShellScript</key>
-					<string>~/EasyDev/bin/ed --xcbp</string>
+					<string>${EasyDevPath}/bin/ed --xcbp</string>
 					<key>ShellPath</key>
 					<string>/bin/sh</string>
 					<key>RunOnlyForDeploymentPostprocessing</key>
